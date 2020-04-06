@@ -17,7 +17,7 @@ func GetUsers(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	}
 
 	//указываем путь к файлу с шаблоном
-	main := filepath.Join("public", "html", "dp.html")
+	main := filepath.Join("github.com/asaady/fs/public", "html", "dp.html")
 
 	//создаем html-шаблон
 	tmpl, err := template.ParseFiles(main)
