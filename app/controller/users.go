@@ -16,11 +16,12 @@ func GetUsers(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
 		return
 	}
 
-	//указываем путь к файлу с шаблоном
+        //указываем пути к файлам с шаблонами
 	main := filepath.Join("public", "html", "dp.html")
+	common := filepath.Join("public", "html", "cmn.html")
 
 	//создаем html-шаблон
-	tmpl, err := template.ParseFiles(main)
+	tmpl, err := template.ParseFiles(main, common)
 	if err != nil {
 		http.Error(rw, err.Error(), 400)
 		return
