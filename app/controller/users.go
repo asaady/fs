@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/julienschmidt/httprouter"
-	"goSiteProject/app/model"
+	"github.com/asaady/fs/app/model"
 	"html/template"
 	"net/http"
 	"path/filepath"
