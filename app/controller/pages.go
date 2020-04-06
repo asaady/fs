@@ -4,8 +4,8 @@ import (
 	"github.com/julienschmidt/httprouter"
 	"html/template"
 	"net/http"
-//	"path/filepath"
 )
+//	"path/filepath"
 
 func StartPage(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	//указываем путь к нужному файлу
